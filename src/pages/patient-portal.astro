@@ -1,0 +1,185 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<Layout 
+  title="Patient Portal - Southaven Internal Medicine | Secure Online Access"
+  description="Access your health records, test results, and request prescription refills through our secure patient portal. Download the Healow app for convenient mobile access."
+>
+  <Hero 
+    title="Welcome to the Patient Portal"
+    subtitle="Connect with your physician in a convenient and secure environment"
+    backgroundImage="https://res.cloudinary.com/dil14r8je/image/upload/v1768327552/auto-site-builder/sitemap-fix-proof2/image_6.jpg"
+    ctaText="Access the Portal"
+    ctaLink="#portal-access"
+  />
+  
+  <!-- Portal Access Section -->
+  <section class="section-padding bg-white" id="portal-access">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <div class="bg-accent-teal text-white p-8 rounded-lg shadow-xl mb-8">
+            <h2 class="text-2xl font-bold mb-4">Click Here to Access the Portal</h2>
+            <a 
+              href="#" 
+              class="bg-white text-accent-teal px-8 py-4 rounded-full font-bold uppercase hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl inline-block"
+            >
+              Access Patient Portal
+            </a>
+          </div>
+        </div>
+        
+        <!-- Portal Information -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- What is the patient portal? -->
+          <div class="bg-light-gray p-8 rounded-lg">
+            <h3 class="text-2xl font-bold text-primary-navy mb-6">What is the patient portal?</h3>
+            <p class="text-slate-600 leading-relaxed mb-6">
+              This forum allows you to connect with your physician in a convenient and secure environment. Upon enrolling in the portal, patients can access test results, request refills, and view health records online.
+            </p>
+            
+            <div class="space-y-4">
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-accent-teal rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <span class="text-slate-600">Access test results</span>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-accent-teal rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <span class="text-slate-600">Request prescription refills</span>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-accent-teal rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <span class="text-slate-600">View health records online</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- How to register -->
+          <div class="bg-light-gray p-8 rounded-lg">
+            <h3 class="text-2xl font-bold text-primary-navy mb-6">How do I register for the portal?</h3>
+            <p class="text-slate-600 leading-relaxed mb-6">
+              To register for the portal, either give us a call and ask for us to send you an invite to your email, or you will be sent one automatically at your next office visit. Your invite will come to your email and have instructions to set up your account.
+            </p>
+            
+            <div class="space-y-4">
+              <div class="bg-white p-4 rounded-lg border-l-4 border-accent-teal">
+                <h4 class="font-semibold text-primary-navy mb-2">Option 1: Call Us</h4>
+                <p class="text-slate-600 text-sm">Call (662) 349-1999 and request an email invite</p>
+              </div>
+              <div class="bg-white p-4 rounded-lg border-l-4 border-accent-teal">
+                <h4 class="font-semibold text-primary-navy mb-2">Option 2: Office Visit</h4>
+                <p class="text-slate-600 text-sm">Receive automatic invite at your next appointment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Healow App Section -->
+  <section class="section-padding bg-primary-navy text-white">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <!-- Healow Info -->
+          <div>
+            <h2 class="text-3xl font-bold mb-6">What is Healow?</h2>
+            <p class="text-gray-300 leading-relaxed mb-6">
+              Healow is our mobile app that offers you all kinds of features through your portal account. Download the app and use our unique practice code to register your account.
+            </p>
+            
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-accent-teal rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <span class="text-gray-300">View your medical records</span>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-accent-teal rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <span class="text-gray-300">Request prescription refills</span>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-accent-teal rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <span class="text-gray-300">Check in for appointments</span>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-accent-teal rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <span class="text-gray-300">Contact us directly</span>
+              </div>
+            </div>
+            
+            <p class="text-accent-teal font-semibold mb-6">
+              Your Healow login info is the same as your portal login info.
+            </p>
+          </div>
+          
+          <!-- App Screenshot -->
+          <div class="text-center">
+            <img 
+              src="https://res.cloudinary.com/dil14r8je/image/upload/v1768327552/auto-site-builder/sitemap-fix-proof2/image_7.jpg" 
+              alt="Healow mobile app screenshot" 
+              class="max-w-sm mx-auto rounded-lg shadow-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section class="section-padding bg-light-gray">
+    <div class="container-custom">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-primary-navy mb-6">Need Help?</h2>
+        <p class="text-xl text-slate-600 mb-8">
+          Questions? Give us a call at (662) 349-1999 or ask the medical assistant on your next visit!
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="tel:6623491999"
+            class="btn-primary"
+          >
+            Call (662) 349-1999
+          </a>
+          <a 
+            href="/contact"
+            class="btn-secondary"
+          >
+            Visit Our Office
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

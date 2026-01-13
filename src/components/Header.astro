@@ -1,0 +1,105 @@
+---
+// Header component
+---
+
+<header class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300" id="header">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex items-center justify-between py-4">
+      <!-- Logo -->
+      <a href="/" class="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+        <img 
+          src="https://res.cloudinary.com/dil14r8je/image/upload/v1768327551/auto-site-builder/sitemap-fix-proof2/image_0.jpg" 
+          alt="Southaven Internal Medicine Logo" 
+          class="w-16 h-16 rounded-full object-cover"
+        />
+        <div>
+          <h1 class="text-xl font-bold text-primary-navy">Southaven Internal Medicine</h1>
+          <p class="text-sm text-slate-600">est. 1996</p>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center space-x-8">
+        <a href="/" class="text-slate-700 hover:text-primary-navy font-medium transition-colors">Home</a>
+        <a href="/patient-portal" class="text-slate-700 hover:text-primary-navy font-medium transition-colors">Patient Portal</a>
+        <a href="/contact" class="text-slate-700 hover:text-primary-navy font-medium transition-colors">Hours & Location</a>
+        <a href="/providers" class="text-slate-700 hover:text-primary-navy font-medium transition-colors">Meet our Providers</a>
+        <a href="/faq" class="text-slate-700 hover:text-primary-navy font-medium transition-colors">FAQ</a>
+      </nav>
+
+      <!-- Contact Info & CTA -->
+      <div class="hidden lg:flex items-center space-x-6">
+        <div class="text-right">
+          <p class="text-sm font-semibold text-primary-navy">P: (662) 349-1999</p>
+          <p class="text-sm text-slate-600">F: (662) 349-9734</p>
+        </div>
+        <a 
+          href="tel:6623491999" 
+          class="bg-accent-teal text-white px-6 py-3 rounded-full font-bold uppercase text-sm hover:bg-teal-500 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+        >
+          Call Now
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button 
+        class="lg:hidden p-2 rounded-md hover:bg-gray-100 transition-colors" 
+        id="mobile-menu-button"
+        aria-label="Toggle mobile menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="lg:hidden hidden pb-4" id="mobile-menu">
+      <div class="flex flex-col space-y-3">
+        <a href="/" class="text-slate-700 hover:text-primary-navy font-medium py-2 transition-colors">Home</a>
+        <a href="/patient-portal" class="text-slate-700 hover:text-primary-navy font-medium py-2 transition-colors">Patient Portal</a>
+        <a href="/contact" class="text-slate-700 hover:text-primary-navy font-medium py-2 transition-colors">Hours & Location</a>
+        <a href="/providers" class="text-slate-700 hover:text-primary-navy font-medium py-2 transition-colors">Meet our Providers</a>
+        <a href="/faq" class="text-slate-700 hover:text-primary-navy font-medium py-2 transition-colors">FAQ</a>
+        <div class="pt-4 border-t border-gray-200">
+          <p class="text-sm font-semibold text-primary-navy mb-1">P: (662) 349-1999</p>
+          <p class="text-sm text-slate-600 mb-3">F: (662) 349-9734</p>
+          <a 
+            href="tel:6623491999" 
+            class="bg-accent-teal text-white px-6 py-3 rounded-full font-bold uppercase text-sm hover:bg-teal-500 transition-colors inline-block"
+          >
+            Call Now
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+  
+  // Header scroll effect
+  let lastScrollY = window.scrollY;
+  const header = document.getElementById('header') as HTMLElement;
+  
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+    
+    if (currentScrollY > 100) {
+      header.classList.add('backdrop-blur-sm', 'bg-white/95');
+    } else {
+      header.classList.remove('backdrop-blur-sm', 'bg-white/95');
+    }
+    
+    lastScrollY = currentScrollY;
+  });
+</script>

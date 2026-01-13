@@ -1,0 +1,60 @@
+---
+export interface Props {
+  title: string;
+  subtitle?: string;
+  backgroundImage?: string;
+  ctaText?: string;
+  ctaLink?: string;
+  showCta?: boolean;
+}
+
+const { 
+  title, 
+  subtitle, 
+  backgroundImage = 'https://res.cloudinary.com/dil14r8je/image/upload/v1768327551/auto-site-builder/sitemap-fix-proof2/image_1.jpg',
+  ctaText = 'Call us today at (662) 349-1999',
+  ctaLink = 'tel:6623491999',
+  showCta = true
+} = Astro.props;
+---
+
+<section class="relative min-h-[600px] lg:min-h-[700px] flex items-center justify-center overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img 
+      src={backgroundImage} 
+      alt="Southaven Internal Medicine" 
+      class="w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-primary-navy/70"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-4xl mx-auto px-4 text-center text-white">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">
+      {title}
+    </h1>
+    
+    {subtitle && (
+      <p class="text-xl md:text-2xl mb-8 text-gray-200 animate-slide-up" style="animation-delay: 0.2s;">
+        {subtitle}
+      </p>
+    )}
+    
+    {showCta && (
+      <div class="animate-slide-up" style="animation-delay: 0.4s;">
+        <a 
+          href={ctaLink}
+          class="bg-accent-teal text-white px-8 py-4 rounded-full font-bold uppercase text-lg hover:bg-teal-500 transition-all duration-300 hover:scale-105 shadow-xl hover:shadow-2xl inline-block"
+        >
+          {ctaText}
+        </a>
+      </div>
+    )}
+  </div>
+
+  <!-- Floating Elements -->
+  <div class="absolute top-20 left-10 w-4 h-4 bg-accent-teal rounded-full opacity-60 animate-float" style="animation-delay: 0s;"></div>
+  <div class="absolute top-40 right-20 w-6 h-6 bg-white rounded-full opacity-40 animate-float" style="animation-delay: 2s;"></div>
+  <div class="absolute bottom-32 left-1/4 w-3 h-3 bg-accent-teal rounded-full opacity-50 animate-float" style="animation-delay: 4s;"></div>
+</section>

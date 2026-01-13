@@ -1,0 +1,222 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<Layout 
+  title="FAQ - Southaven Internal Medicine | Frequently Asked Questions"
+  description="Get answers to frequently asked questions about insurance, lab work, telehealth, and payment options at Southaven Internal Medicine in Southaven, MS."
+>
+  <Hero 
+    title="Frequently Asked Questions"
+    subtitle="Find answers to common questions about our services and policies"
+    backgroundImage="https://res.cloudinary.com/dil14r8je/image/upload/v1768327554/auto-site-builder/sitemap-fix-proof2/image_13.jpg"
+    ctaText="Call us at (662) 349-1999"
+    ctaLink="tel:6623491999"
+  />
+  
+  <!-- FAQ Section -->
+  <section class="section-padding bg-white">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto">
+        <div class="space-y-8">
+          <!-- Insurance Question -->
+          <div class="bg-light-gray p-8 rounded-lg">
+            <h3 class="text-2xl font-bold text-primary-navy mb-6">What insurances do you all accept?</h3>
+            <div class="space-y-4">
+              <p class="text-slate-600 leading-relaxed">
+                We take all major insurances except for the following:
+              </p>
+              <div class="bg-white p-6 rounded-lg border-l-4 border-red-400">
+                <h4 class="font-semibold text-red-800 mb-3">Insurances We Do NOT Accept:</h4>
+                <ul class="space-y-2 text-red-700">
+                  <li class="flex items-center space-x-2">
+                    <div class="w-2 h-2 bg-red-400 rounded-full"></div>
+                    <span>CIGA-Connect Network</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <div class="w-2 h-2 bg-red-400 rounded-full"></div>
+                    <span>TN Care</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <div class="w-2 h-2 bg-red-400 rounded-full"></div>
+                    <span>United Healthcare 3 Rivers</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <div class="w-2 h-2 bg-red-400 rounded-full"></div>
+                    <span>United Healthcare Common Plan</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <div class="w-2 h-2 bg-red-400 rounded-full"></div>
+                    <span>United Healthcare Ambetter</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <div class="w-2 h-2 bg-red-400 rounded-full"></div>
+                    <span>United Healthcare Compass</span>
+                  </li>
+                  <li class="flex items-center space-x-2">
+                    <div class="w-2 h-2 bg-red-400 rounded-full"></div>
+                    <span>United Healthcare Dual Complete</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-400">
+                <p class="text-green-800 font-semibold">
+                  All other major insurance plans are accepted. Please call to verify your specific plan.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Lab Work Question -->
+          <div class="bg-light-gray p-8 rounded-lg">
+            <h3 class="text-2xl font-bold text-primary-navy mb-6">If the doctor orders me blood work, where can I get it done?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+              <div>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                  For your convenience, American Esoteric Laboratories (AEL) has a location right inside our office. All blood work your physician orders can be done on site.
+                </p>
+                <div class="bg-accent-teal/10 p-4 rounded-lg border-l-4 border-accent-teal">
+                  <p class="text-primary-navy font-semibold">
+                    ✓ On-site laboratory services
+                  </p>
+                  <p class="text-primary-navy font-semibold">
+                    ✓ No need to travel to another location
+                  </p>
+                  <p class="text-primary-navy font-semibold">
+                    ✓ Convenient same-visit lab work
+                  </p>
+                </div>
+              </div>
+              <div class="text-center">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <div class="w-16 h-16 bg-accent-teal rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path>
+                      <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V9a1 1 0 00-1-1h-1v-1z"></path>
+                    </svg>
+                  </div>
+                  <h4 class="font-bold text-primary-navy">American Esoteric Laboratories</h4>
+                  <p class="text-sm text-slate-600">On-site in our office</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Telehealth Question -->
+          <div class="bg-light-gray p-8 rounded-lg">
+            <h3 class="text-2xl font-bold text-primary-navy mb-6">What if I'm not able to come in for an office visit but I want to see the doctor?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+              <div>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                  Don't worry! We are now offering telehealth options for our patients. This option allows the doctor to Face Time or call patients securely for their office visit.
+                </p>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                  Of course some appointments still require an in person visit. If you are interested, call and ask about our telehealth appointments.
+                </p>
+                <div class="bg-accent-teal/10 p-4 rounded-lg border-l-4 border-accent-teal">
+                  <p class="text-primary-navy font-semibold">
+                    Call (662) 349-1999 to schedule a telehealth appointment
+                  </p>
+                </div>
+              </div>
+              <div class="text-center">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <div class="w-16 h-16 bg-accent-teal rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v2h2a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM4 16a2 2 0 002 2h8a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6z"></path>
+                    </svg>
+                  </div>
+                  <h4 class="font-bold text-primary-navy">Telehealth Available</h4>
+                  <p class="text-sm text-slate-600">Secure video consultations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Payment Question -->
+          <div class="bg-light-gray p-8 rounded-lg">
+            <h3 class="text-2xl font-bold text-primary-navy mb-6">Which credit cards do you all accept?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+              <div>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                  We accept all major credit cards.
+                </p>
+                <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-400">
+                  <p class="text-green-800 font-semibold">
+                    ✓ Visa, MasterCard, American Express, Discover
+                  </p>
+                  <p class="text-green-800 font-semibold">
+                    ✓ Convenient payment options available
+                  </p>
+                </div>
+              </div>
+              <div class="text-center">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <div class="w-16 h-16 bg-accent-teal rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
+                      <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
+                  <h4 class="font-bold text-primary-navy">All Major Cards</h4>
+                  <p class="text-sm text-slate-600">Convenient payment options</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Additional Help Section -->
+  <section class="section-padding bg-primary-navy text-white">
+    <div class="container-custom">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">Still Have Questions?</h2>
+        <p class="text-xl text-gray-300 mb-8">
+          Our friendly staff is here to help answer any questions you may have about our services, policies, or scheduling.
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div class="bg-white/10 p-6 rounded-lg">
+            <h3 class="text-xl font-bold text-accent-teal mb-3">Call Our Office</h3>
+            <p class="text-gray-300 mb-4">Speak directly with our staff</p>
+            <a 
+              href="tel:6623491999"
+              class="bg-accent-teal text-white px-6 py-3 rounded-full font-bold hover:bg-teal-500 transition-colors inline-block"
+            >
+              (662) 349-1999
+            </a>
+          </div>
+          
+          <div class="bg-white/10 p-6 rounded-lg">
+            <h3 class="text-xl font-bold text-accent-teal mb-3">Visit Our Office</h3>
+            <p class="text-gray-300 mb-4">Ask questions during your visit</p>
+            <a 
+              href="/contact"
+              class="bg-white text-primary-navy px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors inline-block"
+            >
+              Get Directions
+            </a>
+          </div>
+        </div>
+        
+        <div class="bg-accent-teal/20 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-accent-teal mb-3">Office Hours</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-300">
+            <div>
+              <p><strong>Monday & Wednesday:</strong> 7:00 am - 5:00 pm</p>
+              <p><strong>Tuesday & Thursday:</strong> 8:00 am - 5:00 pm</p>
+            </div>
+            <div>
+              <p><strong>Friday:</strong> 7:00 am - 11:00 am</p>
+              <p><strong>Same-day appointments:</strong> 15 available daily</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

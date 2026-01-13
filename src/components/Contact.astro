@@ -1,0 +1,139 @@
+---
+// Contact component
+---
+
+<section class="py-16 lg:py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-primary-navy mb-4">Contact Us</h2>
+      <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+        Ready to schedule your appointment or have questions? We're here to help.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <!-- Contact Information -->
+      <div class="space-y-8">
+        <div class="bg-light-gray p-8 rounded-lg">
+          <h3 class="text-2xl font-bold text-primary-navy mb-6">Get in Touch</h3>
+          
+          <div class="space-y-6">
+            <!-- Phone -->
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-accent-teal rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-primary-navy mb-1">Phone</h4>
+                <a href="tel:6623491999" class="text-slate-600 hover:text-accent-teal transition-colors">(662) 349-1999</a>
+              </div>
+            </div>
+
+            <!-- Fax -->
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-accent-teal rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
+                  <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-primary-navy mb-1">Fax</h4>
+                <span class="text-slate-600">(662) 349-9734</span>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-accent-teal rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-primary-navy mb-1">Address</h4>
+                <div class="text-slate-600">
+                  <p>7680 Airways Blvd.</p>
+                  <p>Southaven, MS 38671</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="mt-8 pt-8 border-t border-gray-200">
+            <h4 class="font-semibold text-primary-navy mb-4">Follow Us</h4>
+            <a 
+              href="https://www.facebook.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="inline-flex items-center space-x-2 text-slate-600 hover:text-accent-teal transition-colors"
+            >
+              <img 
+                src="https://res.cloudinary.com/dil14r8je/image/upload/v1768327551/auto-site-builder/sitemap-fix-proof2/image_3.png" 
+                alt="Facebook" 
+                class="w-6 h-6"
+              />
+              <span>Follow us on Facebook!</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="space-y-4">
+          <a 
+            href="tel:6623491999"
+            class="w-full bg-accent-teal text-white px-8 py-4 rounded-full font-bold uppercase text-center hover:bg-teal-500 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl block"
+          >
+            Call Now: (662) 349-1999
+          </a>
+          <a 
+            href="/patient-portal"
+            class="w-full bg-white text-primary-navy border-2 border-primary-navy px-8 py-4 rounded-full font-bold uppercase text-center hover:bg-primary-navy hover:text-white transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl block"
+          >
+            Access Patient Portal
+          </a>
+        </div>
+      </div>
+
+      <!-- Map and Directions -->
+      <div class="space-y-6">
+        <div class="bg-light-gray p-8 rounded-lg">
+          <h3 class="text-2xl font-bold text-primary-navy mb-6">Location & Directions</h3>
+          
+          <!-- Map Image -->
+          <div class="mb-6">
+            <img 
+              src="https://res.cloudinary.com/dil14r8je/image/upload/v1768327552/auto-site-builder/sitemap-fix-proof2/image_8.jpg" 
+              alt="Map showing location of Southaven Internal Medicine" 
+              class="w-full h-48 object-cover rounded-lg shadow-md"
+            />
+          </div>
+          
+          <div class="space-y-4">
+            <div>
+              <h4 class="font-semibold text-primary-navy mb-2">Finding Our Office</h4>
+              <p class="text-slate-600">Our office is located at 7680 Airways Blvd. Southaven, MS 38671</p>
+            </div>
+            
+            <div>
+              <h4 class="font-semibold text-primary-navy mb-2">Parking Instructions</h4>
+              <p class="text-slate-600">Turn in at the main entrance. Our office is below the children's clinic.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Office Photo -->
+        <div>
+          <img 
+            src="https://res.cloudinary.com/dil14r8je/image/upload/v1768327552/auto-site-builder/sitemap-fix-proof2/image_9.jpg" 
+            alt="Southaven Internal Medicine office building" 
+            class="w-full h-64 object-cover rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
